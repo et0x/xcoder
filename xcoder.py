@@ -43,7 +43,7 @@ def translate_bin2b64(binary):
 			result += b64table[int(binary[i:i+6].ljust(6,"0"),2)]
 		return result+"=="
 
-def translate_b642t(b64):
+def translate_b642t(b64):     # got lazy here.
 	return base64.decodestring(b64)
 
 def translate_h2t(hexstring):
